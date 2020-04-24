@@ -3,21 +3,21 @@
 -- Backup Generated in: 23/04/2010 18:50:33
 -- Database Server Version: MySQL 5.1.26
 
--- USEGO
-
--- in quale schema? bisogna creare uno schema "cucina"
--- aggiungere dro delle table
--- ripulire lo script: correggere errori tipo ;
+drop schema if exists cucina;
+create schema cucina;
 
 use cucina;
 
+drop table if exists amministratori;
+drop table if exists calendario;
+drop table if exists catalogo;
+drop table if exists categoria;
+drop table if exists feedback;
+drop table if exists iscritti;
+drop table if exists mail;
+drop table if exists registrati;
+
 SET FOREIGN_KEY_CHECKS=0; -- non voglio fare un check sulle foreign key...
--- GO
-
-
---
--- Dumping Tables
---
 
 --
 -- Table: amministratori
